@@ -15,10 +15,11 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
-from MVT_Peña.views import integrantes
+from MVT_Peña.views import integrantes, get_inte
 
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('integrantes/<name>/<age>/<date_of_birth>', integrantes),
+    path('get-inte/', get_inte),
 ]
